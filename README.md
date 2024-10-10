@@ -37,16 +37,25 @@ This project is a full-stack application that allows users to manage intersectio
 `pip install django djangorestframework` (or pip3)
 
 **Create a new Django project and app (if not done already)**:  
-`django-admin startproject notraffic`  
-`cd notraffic`  
-`django-admin startapp intersections`
+- `python3 -m django startproject django-crud`  
+- `cd django-crud`
+- `python3 manage.py startapp intersections`
 
-**Add the app to `settings.py`**:  
-Open `notraffic/settings.py` and add `intersections` and `rest_framework` to the `INSTALLED_APPS` list:
+**Run migrations:**
+- `python3 manage.py migrate`
 
-```python
-INSTALLED_APPS = [
-    # ...
-    'rest_framework',
-    'intersections',
-]
+**Run the Django server:**
+- ` python3 manage.py runserver [HOST]`
+
+### Set up the frontend:
+
+**Run migrations:**
+- `cd frontend`
+- `npm install`
+- `npm start`
+
+## Accessing the Application
+`Open your browser and navigate to
+ http://localhost:3000 for the React frontend and
+  http://localhost:8000 for the Django backend.
+ `
