@@ -1,0 +1,40 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore SQLite database
+db.sqlite3
+
+# Ignore virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# Ignore node_modules (for the frontend)
+node_modules/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore compiled code
+*.out
+*.class
+*.ok
+
+# Ignore coverage reports
+coverage/
+*.cover
+*.log
+
+# Ignore IDE and editor config files
+.idea/
+.vscode/
+
+# Ignore Django migrations
+*/migrations/
+
+# Ignore other OS-specific files
+Thumbs.db
